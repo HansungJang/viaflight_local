@@ -56,8 +56,8 @@ public class ShoppingOptions {
 	private String imageURL;
 
 	@ManyToOne
-	@JoinColumn(name = "layover_airline_id")
-	private LayoverAirport layoverAirline;
+	@JoinColumn(name = "layover_airport_id")
+	private LayoverAirport layoverAirport;
 
 	public ShoppingOptions from(ShoppingOptionsDto shoppingOptionsDto) {
 		return ShoppingOptions.builder()

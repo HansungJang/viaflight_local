@@ -23,7 +23,7 @@ public class MealOptionsDBFrameDto {
 	private String cost;
 	private String blog;
 	private String type;
-	private String layoverAirlineId;
+	private String layoverAirportId;
 	private String imageURL;
 
 	public MealOptionsDBFrameDto from(MealOptionsDBFrame mealOptionsDBFrame) {
@@ -38,7 +38,7 @@ public class MealOptionsDBFrameDto {
 				.cost(mealOptionsDBFrame.getCost())
 				.blog(mealOptionsDBFrame.getBlog())
 				.type(mealOptionsDBFrame.getType())
-				.layoverAirlineId(mealOptionsDBFrame.getLayoverAirlineId())
+				.layoverAirportId(mealOptionsDBFrame.getLayoverAirportId())
 				.imageURL(mealOptionsDBFrame.getImageURL())
 				.build();
 	}

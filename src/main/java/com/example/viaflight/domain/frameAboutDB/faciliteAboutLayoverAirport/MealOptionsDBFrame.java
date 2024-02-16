@@ -55,8 +55,8 @@ public class MealOptionsDBFrame {
 	@Column(name = "image_url" ,nullable = true)
 	private String imageURL;
 
-	@Column(name = "layover_airline_id", nullable = false)
-	private String layoverAirlineId;
+	@Column(name = "layover_airport_id", nullable = false)
+	private String layoverAirportId;
 
 
 

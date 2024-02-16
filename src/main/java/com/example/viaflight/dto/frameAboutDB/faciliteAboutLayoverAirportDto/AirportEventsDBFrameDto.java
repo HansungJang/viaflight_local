@@ -22,7 +22,7 @@ public class AirportEventsDBFrameDto {
 	private String cost;
 	private String reservationUrl;
 	private String type;
-	private String layoverAirlineId;
+	private String layoverAirportId;
 	private String imageURL;
 
 	public AirportEventsDBFrameDto from(AirportEventsDBFrame airportEventsDBFrame) {
@@ -36,7 +36,7 @@ public class AirportEventsDBFrameDto {
 				.cost(airportEventsDBFrame.getCost())
 				.reservationUrl(airportEventsDBFrame.getReservationUrl())
 				.type(airportEventsDBFrame.getType())
-				.layoverAirlineId(airportEventsDBFrame.getLayoverAirlineId())
+				.layoverAirportId(airportEventsDBFrame.getLayoverAirportId())
 				.imageURL(airportEventsDBFrame.getImageURL())
 				.build();
 	}

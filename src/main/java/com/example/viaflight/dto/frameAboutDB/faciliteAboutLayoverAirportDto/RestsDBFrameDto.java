@@ -23,7 +23,7 @@ public class RestsDBFrameDto {
 	private String blog;
 	private String cost;
 	private String type;
-	private String layoverAirlineId;
+	private String layoverAirportId;
 	private String imageURL;
 
 	public RestsDBFrameDto from(RestsDBFrame restsDBFrame) {
@@ -38,7 +38,7 @@ public class RestsDBFrameDto {
 				.blog(restsDBFrame.getBlog())
 				.cost(restsDBFrame.getCost())
 				.type(restsDBFrame.getType())
-				.layoverAirlineId(restsDBFrame.getLayoverAirlineId())
+				.layoverAirportId(restsDBFrame.getLayoverAirportId())
 				.imageURL(restsDBFrame.getImageURL())
 				.build();
 	}

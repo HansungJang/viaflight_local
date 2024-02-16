@@ -57,7 +57,7 @@ public class Rests {
 
 	@ManyToOne
 	@JoinColumn(name = "layover_airline_id")
-	private LayoverAirport layoverAirline;
+	private LayoverAirport layoverAirport;
 
 	public Rests from(RestsDto restsDto) {
 		return Rests.builder()

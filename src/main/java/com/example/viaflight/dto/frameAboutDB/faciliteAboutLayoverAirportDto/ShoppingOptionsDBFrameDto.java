@@ -23,7 +23,7 @@ public class ShoppingOptionsDBFrameDto {
 	private String blog;
 	private String cost;
 	private String type;
-	private String layoverAirlineId;
+	private String layoverAirportId;
 	private String imageURL;
 
 	public ShoppingOptionsDBFrameDto from(ShoppingOptionsDBFrame shoppingOptionsDBFrame) {
@@ -38,7 +38,7 @@ public class ShoppingOptionsDBFrameDto {
 				.blog(shoppingOptionsDBFrame.getBlog())
 				.cost(shoppingOptionsDBFrame.getCost())
 				.type(shoppingOptionsDBFrame.getType())
-				.layoverAirlineId(shoppingOptionsDBFrame.getLayoverAirlineId())
+				.layoverAirportId(shoppingOptionsDBFrame.getLayoverAirportId())
 				.imageURL(shoppingOptionsDBFrame.getImageURL())
 				.build();
 	}

@@ -53,8 +53,8 @@ public class AirportEvents {
 	private String imageURL;
 
 	@ManyToOne
-	@JoinColumn(name = "layover_airline_id")
-	private LayoverAirport layoverAirline;
+	@JoinColumn(name = "layover_airport_id")
+	private LayoverAirport layoverAirport;
 
 	public AirportEvents from(AirportEventsDto airportEventsDto) {
 		return AirportEvents.builder()
