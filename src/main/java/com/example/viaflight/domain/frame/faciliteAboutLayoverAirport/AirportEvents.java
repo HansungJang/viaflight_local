@@ -29,10 +29,10 @@ public class AirportEvents {
 	private String location;
 
 	@Column(name = "open_time", nullable = false)
-	private String openTime;
+	private Double openTime;
 
 	@Column(name = "close_time", nullable = false)
-	private String closeTime;
+	private Double closeTime;
 
 	@Column(name = "business_hours", nullable = false)
 	private String businessHours;
@@ -69,6 +69,19 @@ public class AirportEvents {
 				.type(airportEventsDto.getType())
 				.imageURL(airportEventsDto.getImageURL())
 				.build();
+	}
+
+	public AirportEvents(AirportEventsDto airportEventsDto) {
+		this.eventName = airportEventsDto.getEventName();
+		this.location = airportEventsDto.getLocation();
+		this.openTime = airportEventsDto.getOpenTime();
+		this.closeTime = airportEventsDto.getCloseTime();
+		this.businessHours = airportEventsDto.getBusinessHours();
+		this.information = airportEventsDto.getInformation();
+		this.cost = airportEventsDto.getCost();
+		this.reservationUrl = airportEventsDto.getReservationUrl();
+		this.type = airportEventsDto.getType();
+		this.imageURL = airportEventsDto.getImageURL();
 	}
 
 }

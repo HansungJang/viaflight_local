@@ -1,8 +1,7 @@
 package com.example.viaflight.dto.frame.facilitiesAboutLayoverAirport;
 
 import com.example.viaflight.domain.frame.faciliteAboutLayoverAirport.ShoppingOptions;
-import com.example.viaflight.dto.frameAboutDB.faciliteAboutLayoverAirportDto.ShoppingOptionsDBFrameDto;
-import jakarta.persistence.Column;
+import com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto.ShoppingOptionsDBFrameDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,8 +14,8 @@ import lombok.NoArgsConstructor;
 public class ShoppingOptionsDto {
 
 	private String shoppingOptionsName;
-	private String openTime;
-	private String closeTime;
+	private Double openTime;
+	private Double closeTime;
 	private String businessHours;
 	private String location;
 	private String information;

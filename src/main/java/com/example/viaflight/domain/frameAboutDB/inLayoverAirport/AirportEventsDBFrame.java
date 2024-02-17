@@ -1,6 +1,5 @@
-package com.example.viaflight.domain.frameAboutDB.faciliteAboutLayoverAirport;
+package com.example.viaflight.domain.frameAboutDB.inLayoverAirport;
 
-import com.example.viaflight.dto.frameAboutDB.faciliteAboutLayoverAirportDto.AirportEventsDBFrameDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -29,10 +28,10 @@ public class AirportEventsDBFrame {
 	private String location;
 
 	@Column(name = "open_time", nullable = false)
-	private String openTime;
+	private Double openTime;
 
 	@Column(name = "close_time", nullable = false)
-	private String closeTime;
+	private Double closeTime;
 
 	@Column(name = "business_hours", nullable = false)
 	private String businessHours;

@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 public class MealOptionsDto {
 
 	private String mealName;
-	private String openTime;
-	private String closeTime;
+	private Double openTime;
+	private Double closeTime;
 	private String businessHours;
 	private String location;
 	private String information;

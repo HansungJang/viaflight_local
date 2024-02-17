@@ -1,6 +1,5 @@
-package com.example.viaflight.domain.frameAboutDB.faciliteAboutLayoverAirport;
+package com.example.viaflight.domain.frameAboutDB.inLayoverAirport;
 
-import com.example.viaflight.dto.frameAboutDB.faciliteAboutLayoverAirportDto.ShoppingOptionsDBFrameDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,24 +11,24 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "shopping_options_db_frame")
-public class ShoppingOptionsDBFrame {
-	
-	// 면세, 쇼핑
-	
+@Table(name = "rests_db_frame")
+public class RestsDBFrame {
+
+	// 라운지, 호텔, 휴식
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name =  "shopping_options_id" ,nullable = false)
-	private Long shoppingOptionsId;
+	@Column(name = "rest_id",nullable = false)
+	private Long RestId;
 
-	@Column(name = "shopping_options_name", nullable = false)
-	private String shoppingOptionsName;
+	@Column(name = "rest_name", nullable = false)
+	private String restName;
 
 	@Column(name = "open_time", nullable = false)
-	private String openTime;
+	private Double openTime;
 
 	@Column(name = "close_time", nullable = false)
-	private String closeTime;
+	private Double closeTime;
 
 	@Column(name = "business_hours", nullable = false)
 	private String businessHours;
@@ -57,6 +56,5 @@ public class ShoppingOptionsDBFrame {
 
 	@Column(name = "layover_airport_id", nullable = false)
 	private String layoverAirportId;
-
 
 }

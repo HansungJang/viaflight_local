@@ -26,10 +26,10 @@ public class ShoppingOptions {
 	private String shoppingOptionsName;
 
 	@Column(name = "open_time", nullable = false)
-	private String openTime;
+	private Double openTime;
 
 	@Column(name = "close_time", nullable = false)
-	private String closeTime;
+	private Double closeTime;
 
 	@Column(name = "business_hours", nullable = false)
 	private String businessHours;

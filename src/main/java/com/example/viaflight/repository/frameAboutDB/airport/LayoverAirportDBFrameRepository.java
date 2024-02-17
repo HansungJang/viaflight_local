@@ -10,4 +10,5 @@ import java.util.Optional;
 
 public interface LayoverAirportDBFrameRepository extends JpaRepository<LayoverAirportDBFrame, Long>{
 	Optional<LayoverAirportDBFrame> findByLayoverAirportId(String layoverAirportId);
+
 }

@@ -1,7 +1,6 @@
-package com.example.viaflight.dto.frameAboutDB.faciliteAboutLayoverAirportDto;
+package com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto;
 
-import com.example.viaflight.domain.frameAboutDB.faciliteAboutLayoverAirport.ShoppingOptionsDBFrame;
-import jakarta.persistence.Column;
+import com.example.viaflight.domain.frameAboutDB.inLayoverAirport.ShoppingOptionsDBFrame;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,8 +13,8 @@ import lombok.NoArgsConstructor;
 public class ShoppingOptionsDBFrameDto {
 
 	private String shoppingOptionsName;
-	private String openTime;
-	private String closeTime;
+	private Double openTime;
+	private Double closeTime;
 	private String businessHours;
 	private String location;
 	private String information;
@@ -26,7 +25,7 @@ public class ShoppingOptionsDBFrameDto {
 	private String layoverAirportId;
 	private String imageURL;
 
-	public ShoppingOptionsDBFrameDto from(ShoppingOptionsDBFrame shoppingOptionsDBFrame) {
+	public static ShoppingOptionsDBFrameDto from(ShoppingOptionsDBFrame shoppingOptionsDBFrame) {
 		return ShoppingOptionsDBFrameDto.builder()
 				.shoppingOptionsName(shoppingOptionsDBFrame.getShoppingOptionsName())
 				.openTime(shoppingOptionsDBFrame.getOpenTime())

@@ -1,7 +1,6 @@
-package com.example.viaflight.dto.frameAboutDB.faciliteAboutLayoverAirportDto;
+package com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto;
 
-import com.example.viaflight.domain.frameAboutDB.faciliteAboutLayoverAirport.RestsDBFrame;
-import jakarta.persistence.Column;
+import com.example.viaflight.domain.frameAboutDB.inLayoverAirport.RestsDBFrame;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,8 +13,8 @@ import lombok.NoArgsConstructor;
 public class RestsDBFrameDto {
 
 	private String restName;
-	private String openTime;
-	private String closeTime;
+	private Double openTime;
+	private Double closeTime;
 	private String businessHours;
 	private String location;
 	private String information;
@@ -26,7 +25,8 @@ public class RestsDBFrameDto {
 	private String layoverAirportId;
 	private String imageURL;
 
-	public RestsDBFrameDto from(RestsDBFrame restsDBFrame) {
+
+	public static RestsDBFrameDto from(RestsDBFrame restsDBFrame) {
 		return RestsDBFrameDto.builder()
 				.restName(restsDBFrame.getRestName())
 				.openTime(restsDBFrame.getOpenTime())

@@ -1,8 +1,8 @@
 package com.example.viaflight.dto.frame.facilitiesAboutLayoverAirport;
 
 import com.example.viaflight.domain.frame.faciliteAboutLayoverAirport.AirportEvents;
-import com.example.viaflight.dto.frameAboutDB.faciliteAboutLayoverAirportDto.AirportEventsDBFrameDto;
-import jakarta.persistence.Column;
+import com.example.viaflight.domain.frameAboutDB.inLayoverAirport.AirportEventsDBFrame;
+import com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto.AirportEventsDBFrameDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,14 +16,27 @@ public class AirportEventsDto {
 
 	private String eventName;
 	private String location;
-	private String openTime;
-	private String closeTime;
+	private Double openTime;
+	private Double closeTime;
 	private String businessHours;
 	private String information;
 	private String cost;
 	private String reservationUrl;
 	private String type;
 	private String imageURL;
+
+	public AirportEventsDto(AirportEventsDBFrame airportEventsDBFrame) {
+		this.eventName = airportEventsDBFrame.getEventName();
+		this.location = airportEventsDBFrame.getLocation();
+		this.openTime = airportEventsDBFrame.getOpenTime();
+		this.closeTime = airportEventsDBFrame.getCloseTime();
+		this.businessHours = airportEventsDBFrame.getBusinessHours();
+		this.information = airportEventsDBFrame.getInformation();
+		this.cost = airportEventsDBFrame.getCost();
+		this.reservationUrl = airportEventsDBFrame.getReservationUrl();
+		this.type = airportEventsDBFrame.getType();
+		this.imageURL = airportEventsDBFrame.getImageURL();
+	}
 
 	public AirportEventsDto from(AirportEvents airportEvents) {
 		return AirportEventsDto.builder()

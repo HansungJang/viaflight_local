@@ -23,7 +23,7 @@ public class LayoverAirportDBFrame {
 	private Long idx;
 
 	@Column(name = "layover_airport_id", nullable = false)
-	private String layoverAirportId;    // 이건 이제 SIN 이런 것들 해주는 것.
+	private String layoverAirportId;
 
 	@Column(name = "layover_airport_name", nullable = false)
 	private String layoverAirportName;
@@ -49,7 +49,26 @@ public class LayoverAirportDBFrame {
 	@Column(name = "information_center", nullable = true, length = 1000)
 	private String informationCenter;
 
+	@Column(name = "skytrain", nullable = true, length = 1000)
+	private String skytrainInAirport;
 
+	@Column(name = "shuttle_bus", nullable = true, length = 1000)
+	private String shuttleBusInAirport;
+
+	@Column(name = "train_mrt", nullable = true, length = 1000)
+	private String trainMrtOutAirport;
+
+	@Column(name = "taxi", nullable = true, length = 1000)
+	private String taxiOutAirport;
+
+	@Column(name = "public_bus", nullable = true, length = 1000)
+	private String publicBusOutAirport;
+
+	@Column(name = "airport_transfer_bus", nullable = true, length = 1000)
+	private String airportTransferBusOutAirport;
+
+	@Column(name = "airport_shuttle_bus", nullable = true, length = 1000)
+	private String airportShuttleBusOutAirport;
 
 
 }

@@ -1,6 +1,5 @@
-package com.example.viaflight.domain.frameAboutDB.faciliteAboutLayoverAirport;
+package com.example.viaflight.domain.frameAboutDB.inLayoverAirport;
 
-import com.example.viaflight.dto.frameAboutDB.faciliteAboutLayoverAirportDto.RestsDBFrameDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,24 +11,24 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "rests_db_frame")
-public class RestsDBFrame {
+@Table(name = "meal_options_db_frame")
+public class MealOptionsDBFrame {
 
-	// 라운지, 호텔, 휴식
+	// 식사, 카페, 디저트
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "rest_id",nullable = false)
-	private Long RestId;
+	@Column(name = "meal_options_id",nullable = false)
+	private Long mealOptionsId;
 
-	@Column(name = "rest_name", nullable = false)
-	private String restName;
+	@Column(name = "meal_name", nullable = false)
+	private String mealName;
 
 	@Column(name = "open_time", nullable = false)
-	private String openTime;
+	private Double openTime;
 
 	@Column(name = "close_time", nullable = false)
-	private String closeTime;
+	private Double closeTime;
 
 	@Column(name = "business_hours", nullable = false)
 	private String businessHours;
@@ -43,11 +42,11 @@ public class RestsDBFrame {
 	@Column(name = "phone_number", nullable = true)
 	private String phoneNumber;
 
-	@Column(name = "blog", nullable = true)
-	private String blog;
-
 	@Column(name = "cost", nullable = true)
 	private String cost;
+
+	@Column(name = "blog", nullable = true)
+	private String blog;
 
 	@Column(name = "type", nullable = false)
 	private String type;
@@ -57,5 +56,7 @@ public class RestsDBFrame {
 
 	@Column(name = "layover_airport_id", nullable = false)
 	private String layoverAirportId;
+
+
 
 }

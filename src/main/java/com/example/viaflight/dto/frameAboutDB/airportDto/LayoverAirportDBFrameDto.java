@@ -1,8 +1,6 @@
 package com.example.viaflight.dto.frameAboutDB.airportDto;
 
 import com.example.viaflight.domain.frameAboutDB.airport.LayoverAirportDBFrame;
-import com.example.viaflight.dto.frame.airport.LayoverAirportDto;
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,8 +22,15 @@ public class LayoverAirportDBFrameDto {
 	private String currencyExchange;
 	private String luggageStorage;
 	private String informationCenter;
+	private String skytrainInAirport;
+	private String shuttleBusInAirport;
+	private String trainMrtOutAirport;
+	private String taxiOutAirport;
+	private String publicBusOutAirport;
+	private String airportTransferBusOutAirport;
+	private String airportShuttleBusOutAirport;
 
-	public LayoverAirportDBFrameDto from(LayoverAirportDBFrame layoverAirportDBFrame) {
+	public static LayoverAirportDBFrameDto from(LayoverAirportDBFrame layoverAirportDBFrame) {
 		return LayoverAirportDBFrameDto.builder()
 				.layoverAirportId(layoverAirportDBFrame.getLayoverAirportId())
 				.layoverAirportName(layoverAirportDBFrame.getLayoverAirportName())
@@ -36,6 +41,13 @@ public class LayoverAirportDBFrameDto {
 				.currencyExchange(layoverAirportDBFrame.getCurrencyExchange())
 				.luggageStorage(layoverAirportDBFrame.getLuggageStorage())
 				.informationCenter(layoverAirportDBFrame.getInformationCenter())
+				.skytrainInAirport(layoverAirportDBFrame.getSkytrainInAirport())
+				.shuttleBusInAirport(layoverAirportDBFrame.getShuttleBusInAirport())
+				.trainMrtOutAirport(layoverAirportDBFrame.getTrainMrtOutAirport())
+				.taxiOutAirport(layoverAirportDBFrame.getTaxiOutAirport())
+				.publicBusOutAirport(layoverAirportDBFrame.getPublicBusOutAirport())
+				.airportTransferBusOutAirport(layoverAirportDBFrame.getAirportTransferBusOutAirport())
+				.airportShuttleBusOutAirport(layoverAirportDBFrame.getAirportShuttleBusOutAirport())
 				.build();
 	}
 

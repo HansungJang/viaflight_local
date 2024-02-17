@@ -1,7 +1,6 @@
-package com.example.viaflight.dto.frameAboutDB.faciliteAboutLayoverAirportDto;
+package com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto;
 
-import com.example.viaflight.domain.frameAboutDB.faciliteAboutLayoverAirport.AirportEventsDBFrame;
-import jakarta.persistence.Column;
+import com.example.viaflight.domain.frameAboutDB.inLayoverAirport.AirportEventsDBFrame;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,8 +14,8 @@ public class AirportEventsDBFrameDto {
 
 	private String eventName;
 	private String location;
-	private String openTime;
-	private String closeTime;
+	private Double openTime;
+	private Double closeTime;
 	private String businessHours;
 	private String information;
 	private String cost;
@@ -25,7 +24,7 @@ public class AirportEventsDBFrameDto {
 	private String layoverAirportId;
 	private String imageURL;
 
-	public AirportEventsDBFrameDto from(AirportEventsDBFrame airportEventsDBFrame) {
+	public static AirportEventsDBFrameDto from(AirportEventsDBFrame airportEventsDBFrame) {
 		return AirportEventsDBFrameDto.builder()
 				.eventName(airportEventsDBFrame.getEventName())
 				.location(airportEventsDBFrame.getLocation())
