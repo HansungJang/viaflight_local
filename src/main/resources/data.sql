@@ -846,8 +846,141 @@ VALUES ('SIN',
         );
 
 
+# FoodSpot
+INSERT INTO food_spot_db_frame (food_spot_name, open_time, close_time, business_time, information, phone_number, type, image_url, layover_airport_id)
+VALUES ('송파 바쿠테 본점', '10', '21', '오전 10시~오후 9시', '바쿠테(싱가포르식 돼지갈비탕)는 돼지 뼈를 삶아 우려낸 현지 음식으로 송파 바쿠테는 바쿠테와 고기 조림 요리로 유명해 많은 손님이 찾는 아늑한 레스토랑입니다. 한국의 갈비탕과 같은 보양식으로 현지인들이 자주 먹으며 한국인의 입맛에 잘 맞습니다. 가격은 약 SG$510 정도입니다.', NULL, 'FoodSpot', NULL, 'SIN');
 
 
+INSERT INTO food_spot_db_frame (food_spot_name, open_time, close_time, business_time, information, phone_number, type, image_url, layover_airport_id)
+VALUES ('롱비치 시푸드 레스토랑', '11', '23', '오전 11시 ~ 오후11시', 'East Coast Seafood Centre에 위치해 있습니다. 롱비치 시푸드 레스토랑은 현지인들이 싱가포르의 대표적인 국민 요리인 칠리크랩을 잘 만드는 최고의 현지 식당으로 추천하곤 하는 곳입니다. 신선한 게를 사용하는 데다가, 이름에서 알 수 있듯이 매운 맛이 일품입니다. 메뉴가 다양하며, 여러 가지 해산물을 튀기고 삶고 굽는 등 다양한 조리법을 선택할 수 있으며 복잡한 도시에서 벗어나 느긋한 분위기를 즐기는 묘미도 있는 곳입니다. 월-금 오후3시~5시 브레이크 타임', '(+65 6448 3636)', 'FoodSpot', NULL, 'SIN');
+
+
+INSERT INTO food_spot_db_frame (food_spot_name, open_time, close_time, business_time, information, phone_number, type, image_url, layover_airport_id)
+VALUES ('더 코코넛 클럽', '11', '9.5', '오전11시 ~ 오후9시30분', '편안한 분위기의 싱가포르 레스토랑으로 코코넛 밀크 요리법으로 조리한 메뉴를 선보입니다. 싱가포르에서 가장 훌륭한 나시르막을 제공하는 식민지 시대풍의 매장입니다. 나시 르막은 코코넛 쌀, 멸치, 땅콩과 함께 제공되는 매콤한 말레이시아 닭고기 요리로, 달걀프라이를 얹어서 먹기도 합니다. 메뉴의 메인 요리는 나시르막이며 가격은 SG$15입니다. 코코넛 클럽에서는 그 밖에 차와 커피를 주문할 수 있으며 인테리어는 밝고 현대적입니다. 월요일 휴무. 오후 2시 30분~오후5시 브레이크 타임',
+        '(+65 8725 3315)', 'FoodSpot', NULL, 'SIN');
+
+
+INSERT INTO food_spot_db_frame (food_spot_name, open_time, close_time, business_time, information, phone_number, type, image_url, layover_airport_id)
+VALUES ('맥스웰 푸드 센터', '8', '14', '오전8시 ~ 오전2시', '차이나타운에 있는 호커 센터로 명물 치킨 라이스, 딤섬 같은 길거리 음식을 파는 가판대가 늘어서 있습니다. 다양한 메뉴를 저렴한 가격에 맛볼 수 있으며 메뉴당 가격은 SG$1~10 정도입니다.', '(+65 6225 5632)', 'FoodSpot', NULL, 'SIN');
+
+
+INSERT INTO food_spot_db_frame (food_spot_name, open_time, close_time, business_time, information, phone_number, type, image_url, layover_airport_id)
+VALUES ('잠잠', '7', '23', '오전7시 ~ 오후11시', '무르타박(달걀, 양파, 고기 등의 소로 속을 채운 밀전병을 네모나게 썰어 내는 음식) 맛집으로 유명한 이슬람 식당으로 1908년에 문을 열었습니다. 다양한 말레이시아 및 인도 요리를 맛볼 수 있는 곳입니다.', '(+65 6298 6320)', 'FoodSpot', NULL, 'SIN');
+
+
+INSERT INTO food_spot_db_frame (food_spot_name, open_time, close_time, business_time, information, phone_number, type, image_url, layover_airport_id)
+VALUES ('Positano Risto', '12', '22', '오후12시 ~ 오후10시', '무알코올 음료와 푸짐한 할랄 및 이탈리아 요리를 제공하는 편안한 실내 레스토랑입니다. 피자, 아란치니, 파스타, 라자냐 등 다양한 이탈리안 요리를 판매합니다.', '(+65 6292 1866)', 'FoodSpot', NULL, 'SIN');
+
+
+# paid_activity
+
+INSERT INTO paid_activity_db_frame (paid_activity_name, open_time, close_time, used_time, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES ('싱가포르 라이온 시티 하이라이트 자전거 투어', 9, 24, 4, '오전9시~', '현지 전문 가이드와 함께 싱가포르의 역사 및 관광 자전거 투어에 참여하세요. 도시를 달리며 싱가포르의 역사와 문화의 흥미로운 측면을 발견하세요. 인적이 드문 길에서 벗어나기
+
+니콜 하이웨이 MRT 역(순환선)에서 만나세요. 지상 A 출구로 나오셔서 택시 승차장 F21을 찾으세요. 만남 장소는 상점/상점이 아닙니다.',
+     NULL, 'https://www.getyourguide.com/ko-kr/singgaporeu-l170/singgaporeu-raion-siti-hairaiteu-bannajeol-jajeongeo-tueo-t327376?date_from=2024-02-23&date_to=2024-02-22&date_to=2024-02-22&ranking_uuid=0949774e-a80a-451f-8f70-36277f8f38b9&_pc=1,1',
+     'paid_tour', NULL, 'SIN');
+
+
+INSERT INTO paid_activity_db_frame
+(paid_activity_name, open_time, close_time, used_time, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES
+    ('싱가포르 마리나 베이 샌즈 스카이 파크 전망대', 11, 16, NULL, '매일 11:00 ~ 16:00', '스카이 파크 전망대에서 싱가포르를 감상하는 건 싱가포르 여행의 필수 코스입니다. 싱가포르 시내의 중심부에 위치한 57층 건물에서 싱가포르의 전경을 감상해 보세요.',
+     NULL, 'https://www.myrealtrip.com/offers/126841', 'paid_tour', NULL, 'SIN');
+
+
+INSERT INTO paid_activity_db_frame
+(paid_activity_name, open_time, close_time, used_time, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES
+    ('싱가포르 마리나베이 샌즈 아트 사이언스 뮤지엄', 10, 19, 1.25, '(오전 10시부터 30분 간격으로 입장하며 오후 5시 30분에 마지막 입장입니다)
+(평균 관람 소요시간은 75분 전후입니다)', '아트 사이언스 뮤지엄에서는 흥미로운 작품들과 디지털 아트, 체험할 수 있는 다양한 장소가 마련되어 있습니다. 소중한 이들과 잊지 못할 시간을 가져 보세요.',
+     NULL, 'https://www.myrealtrip.com/offers/55205', 'paid_tour', NULL, 'SIN');
+
+
+INSERT INTO paid_activity_db_frame
+(paid_activity_name, open_time, close_time, used_time, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES
+    ('유니버셜 스튜디오 싱가포르', 11, 18, NULL, '11:00 ~ 18:00 or 20:00 (공식 홈페이지 확인 필수)',
+     '유니버셜 스튜디오 싱가포르는 싱가포르 센토사 섬 내에 위치한 동남아시아 최초의 유니버셜 스튜디오 테마파크입니다. 온 가족이 즐길 수 있는 장소로 매력적인 영화의 세계와 함께 다양한 놀이기구와 쇼를 경험할 수 있는 공간입니다.',
+     NULL, 'https://www.myrealtrip.com/offers/128279', 'paid_tour', NULL, 'SIN');
+
+
+INSERT INTO paid_activity_db_frame
+(paid_activity_name, open_time, close_time, used_time, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES
+    ('싱가포르 리버 크루즈', 13, 21, 0.66, '월, 화, 수, 목 13:00 ~ 22:00
+금, 토, 일, 공휴일 10:00 ~ 22:00', '싱가포르의 야경을 한눈에 볼 수 있는 리버 크루즈는 싱가포르 방문의 꼭 들러야 할 명소 중 하나입니다. 역사적인 지역부터 현대적인 도시의 모습까지 다양한 경험을 제공하니, 싱가포르 여행 계획 시 리버 크루즈를 포함시켜 보세요! 더욱 특별한 추억을 만들 수 있을 거예요.',
+     NULL, 'https://www.myrealtrip.com/offers/126840', 'paid_tour', NULL, 'SIN');
+
+
+INSERT INTO paid_activity_db_frame
+(paid_activity_name, open_time, close_time, used_time, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES
+    ('싱가포르: 라이브 가이드와 함께하는 빅 버스 나이트 투어', 9, 17, 3, '정보란 참고', '싱가포르의 매력적인 야경을 만끽할 수 있는 빅 버스 나이트
+투어에서는 리버 크루즈와 함께하는 싱가포르의 다채로운
+밤을 경험할 수 있습니다. 라이브 가이드가 동행하여
+싱가포르의 밤과 관련된 다양한 이야기와 설명을 들을 수 있는
+기회를 제공합니다.
+
+
+[옐로우 라인]
+- 소요시간 : 70분
+- 첫차 : 9:00 / 막차:18:00
+- 운행간격 15-25분
+
+[레드라인]
+ - 소요시간 : 60분
+- 첫차 : 9:30 / 막차:17:00
+- 운행간격 20-25분
+
+[블루라인]
+- 소요시간 : 30분
+- 첫차 : 9:25 / 막차:17:15
+- 운행간격 30분
+Blackout Date : 9월18-23일
+
+[그린라인]
+- 소요시간 : 45분
+- 첫차 : 9:00 / 막차:17:30
+- 운행간격 40분', NULL,
+     'https://www.getyourguide.com/ko-kr/gadeunseu-bai-deo-bei-l5785/singgaporeu-3sigan-pul-gaideu-daehyeong-beoseu-naiteu-tueo-t309108?ranking_uuid=1fff8a28-5e66-45da-9675-bed61365c436&date_from=2024-02-29&_pc=1,1',
+     'paid_tour', NULL, 'SIN');
+
+
+INSERT INTO paid_activity_db_frame
+(paid_activity_name, open_time, close_time, used_time, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES
+    ('가든스 바이더 베이', 10, 18, 2.25,
+     '플로랄 판타지 : 매일 10시 ~ 18시 (입장기준) 클라우드+플라워돔 및 전망대 : 매일 09시 ~ 20시 (입장기준)', '• 플로랄 판타지(Floral Fantasy) 실내 온실로 역사와 환상의 영역을 탐구할 수 있습니다. 동화와 유명한 바빌론의 공중 정원에서 영감을 받은 4개의 구역에서 동굴 공간, 극적인 유목 조각품, 플로랄 아트 작품을 만나볼 수 있습니다. • 클라우드 포레스트(Cloud Forest) 안개와 푸른 식물로 덮인 35m 높이의 구조물인 클라우드 마운틴에는 양치류와 낭상엽 식물들이 살고 있습니다. 클라우드 마운틴을 오르면 발견할 수 있는 열대 고지대 식물들을 보며 상상력을 펼쳐보세요. • 플라워 돔(Flower Dome) 28헥타르 규모의 푸른 공간은 3개의 냉방 온실 중 규모가 가장 크며 2015년 기네스 세계 기록에 세계 최대의 유리 온실로 등재되었습니다. 이곳에서는 1,000년 된 올리브 나무, 목련, 난초 등 5개 대륙의 다양한 식물과 꽃이 서식하고 있습니다. 가든스 바이 더 베이에서 가장 아름다운 볼거리 중 하나인 플라워 돔에서는 단순한 꽃의 천국 이상을 경험할 수 있습니다.',
+     NULL, 'https://www.myrealtrip.com/offers/53321', 'paid_tour', NULL, 'SIN');
+
+
+
+# FreeTour
+
+INSERT INTO free_tour_db_frame(free_tour_name, route, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES ('헤리티지 투어', '마리나베이 - 중심 상업 지구 - 차이나타운 (30분 경유) - 싱가포르 강 - 캄퐁 글람 (30분 경유)', '2시간 30분',
+        '이 무료 2시간 30분 헤리티지 투어는 싱가포르의 역사와 문화를 탐험하기 위해 시간을 거슬러 올라갑니다. 식민지 시대의 과거가 풍부한 유서 깊은 시민 지구를 지나 차이나타운과 캄퐁 겔람의 문화 구역을 산책해보세요. 차이나타운과 캄퐁 겔람(Kampong Gelam)에 잠시 머무르면 보석 같은 건축물과 사진을 찍을 수 있고 현지 간식이나 독특한 기념품을 기념품으로 구입할 수도 있습니다. 등록 세부 정보 - 환승 구역에 머물고 입국 심사를 받지 마세요 서비스 카운터 - 터미널 2: 환승 구역(게이트 F50 근처) - 터미널 3: 환승 구역(게이트 A1 - A8 근처) - 기타 터미널: 환승 구역 내에서 스카이트레인을 타고 터미널 3으로 이동하여 등록하시기 바랍니다. 필수 서류 - 여권, 탑승권, 입국 비자(해당되는 경우) 및 투어 예약 확인서',
+        '무료', 'https://www.changiairport.com/en/discover/recommended-itineraries/free-singapore-heritage-tour.html', 'free_tour', NULL, 'SIN');
+
+
+INSERT INTO free_tour_db_frame(free_tour_name, route, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES ('도시 명소 투어', '시청 - 시민 지구 - 주빌리 브릿지 - 머라이언 공원 (30분 경유) - 가든스 바이 더 베이 (30분 체류) - 마리나 베이 샌즈', '2시간 30분',
+     '이 무료 2시간 30분 동안의 도시 관광 투어는 현대적인 싱가포르를 보여주고 싱가포르의 웅장한 도시 경관이 활기차고 살기 좋은 도시를 보장하기 위해 지속 가능한 방식으로 어떻게 건설되었는지 보여줍니다. 머라이언 공원(Merlion Park)에 들러 상징적인 마리나 베이(Marina Bay)와 도시 스카이라인을 배경으로 사진을 찍을 시간을 가지세요. 가든스 바이 더 베이(Gardens by the Bay)의 두 번째 정거장에서는 세계적으로 유명한 마리나 베이 샌즈(Marina Bay Sands)를 향해 걸어가면서 슈퍼트리의 놀라운 전망을 감상할 수 있습니다. 등록 세부 정보 - 환승 구역에 머물고 입국 심사를 받지 마세요 서비스 카운터 - 터미널 2: 환승 구역(게이트 F50 근처) - 터미널 3: 환승 구역(게이트 A1 - A8 근처) - 기타 터미널: 환승 구역 내에서 스카이트레인을 타고 터미널 3으로 이동하여 등록하시기 바랍니다. 필수 서류 - 여권, 탑승권, 입국 비자(해당되는 경우) 및 투어 예약 확인서',
+     '무료', 'https://www.changiairport.com/en/discover/recommended-itineraries/free-singapore-city-sights-tour.html', 'free_tour', NULL, 'SIN');
+
+
+INSERT INTO free_tour_db_frame(free_tour_name, route, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES ('쥬얼 투어', '창이 공항 제3터미널 - 시세이도 포레스트 밸리 - HSBC Rain Vortex - 지역유산 브랜드 - 창이 체험 스튜디오 - 캐노피 파크', '2시간 30분',
+     '이 무료 2시간 30분 도보 투어를 통해 창이 공항의 최신 개발 사업인 쥬얼에서 자연이 소매점과 만나는 경이로운 세계를 발견해보세요. 시세이도 포레스트 밸리를 거닐며 울창한 녹색 보호구역에 푹 빠져보고, HSBC Rain Vortex에 감탄하며, 현지 전통 브랜드의 간식을 맛보세요. 캐노피 파크를 지나며 항공의 세계로 이끄는 창이 경험 스튜디오을 즐기세요. 쥬얼의 모든 것을 한 번에 경험할 수 있습니다! 등록 세부 정보 - 환승 구역에 머물고 입국 심사를 받지 마세요 서비스 카운터 - 터미널 2: 환승 구역(게이트 F50 근처) - 터미널 3: 환승 구역(게이트 A1 - A8 근처) - 기타 터미널: 환승 구역 내에서 스카이트레인을 타고 터미널 3으로 이동하여 등록하시기 바랍니다. 필수 서류 - 여권, 탑승권, 입국 비자(해당되는 경우) 및 투어 예약 확인서',
+     '무료', 'https://www.changiairport.com/en/discover/recommended-itineraries/free-jewel-tour.html', 'free_tour', NULL, 'SIN');
+
+
+INSERT INTO free_tour_db_frame(free_tour_name, route, business_time, information, cost, homepage, type, image_url, layover_airport_id)
+VALUES
+    ('창이 구역 투어', '탐피네스 뉴타운 - 탐피네스 센트럴 파크 (30분 경유) - Our Tampines Hub - 창이 빌리지 - 창이 해변 공원 (30분 정차)', '2시간 30분',
+     '싱가포르에서 현지인처럼 사는 것이 어떤 것인지 궁금한 적이 있나요? 2시간 30분 동안의 무료 창이 구역 투어를 통해 독특하게 디자인된 주거 마을과 공항에서 매우 가까운 조용한 마을을 방문하여 싱가포르인의 삶에 푹 빠져보세요. 도시는 잠시 잊고 창이 구역(Changi Precinct)에서 숨겨진 보석을 찾아보세요. 등록 세부 정보 - 환승 구역에 머물고 입국 심사를 받지 마세요 서비스 카운터 - 터미널 2: 환승 구역(게이트 F50 근처) - 터미널 3: 환승 구역(게이트 A1 - A8 근처) - 기타 터미널: 환승 구역 내에서 스카이트레인을 타고 터미널 3으로 이동하여 등록하시기 바랍니다. 필수 서류 - 여권, 탑승권, 입국 비자(해당되는 경우) 및 투어 예약 확인서',
+     '무료', 'https://www.changiairport.com/en/discover/recommended-itineraries/free-singapore-changi-precinct-tour.html', 'free_tour', NULL, 'SIN');
 
 
 
