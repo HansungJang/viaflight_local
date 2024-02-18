@@ -1,4 +1,4 @@
-package com.example.viaflight.service.airport;
+package com.example.viaflight.service;
 
 import com.example.viaflight.controller.request.LayoverAirportRequest;
 import com.example.viaflight.controller.response.LayoverAirportResponse;
@@ -7,6 +7,7 @@ import com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto.AirportEventsD
 import com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto.MealOptionsDBFrameDto;
 import com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto.RestsDBFrameDto;
 import com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto.ShoppingOptionsDBFrameDto;
+import com.example.viaflight.service.airport.LayoverAirportService;
 import com.example.viaflight.service.inLayoverAirport.AirportEventsService;
 import com.example.viaflight.service.inLayoverAirport.MealOptionsService;
 import com.example.viaflight.service.inLayoverAirport.RestsService;

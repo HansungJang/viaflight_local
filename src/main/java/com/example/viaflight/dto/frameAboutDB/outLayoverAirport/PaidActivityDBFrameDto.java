@@ -1,5 +1,6 @@
 package com.example.viaflight.dto.frameAboutDB.outLayoverAirport;
 
+import com.example.viaflight.domain.frameAboutDB.outLayoverAirport.PaidActivityDBFrame;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,5 +23,21 @@ public class PaidActivityDBFrameDto {
 	private String type;
 	private String imageURL;
 	private String layoverAirportId;
+
+	public static PaidActivityDBFrameDto from(PaidActivityDBFrame paidActivityDBFrame) {
+		return PaidActivityDBFrameDto.builder()
+				.paidActivityName(paidActivityDBFrame.getPaidActivityName())
+				.openTime(paidActivityDBFrame.getOpenTime())
+				.closeTime(paidActivityDBFrame.getCloseTime())
+				.usedTime(paidActivityDBFrame.getUsedTime())
+				.businessTime(paidActivityDBFrame.getBusinessTime())
+				.information(paidActivityDBFrame.getInformation())
+				.cost(paidActivityDBFrame.getCost())
+				.homepage(paidActivityDBFrame.getHomepage())
+				.type(paidActivityDBFrame.getType())
+				.imageURL(paidActivityDBFrame.getImageURL())
+				.layoverAirportId(paidActivityDBFrame.getLayoverAirportId())
+				.build();
+	}
 
 }

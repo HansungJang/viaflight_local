@@ -856,7 +856,7 @@ VALUES ('롱비치 시푸드 레스토랑', '11', '23', '오전 11시 ~ 오후11
 
 
 INSERT INTO food_spot_db_frame (food_spot_name, open_time, close_time, business_time, information, phone_number, type, image_url, layover_airport_id)
-VALUES ('더 코코넛 클럽', '11', '9.5', '오전11시 ~ 오후9시30분', '편안한 분위기의 싱가포르 레스토랑으로 코코넛 밀크 요리법으로 조리한 메뉴를 선보입니다. 싱가포르에서 가장 훌륭한 나시르막을 제공하는 식민지 시대풍의 매장입니다. 나시 르막은 코코넛 쌀, 멸치, 땅콩과 함께 제공되는 매콤한 말레이시아 닭고기 요리로, 달걀프라이를 얹어서 먹기도 합니다. 메뉴의 메인 요리는 나시르막이며 가격은 SG$15입니다. 코코넛 클럽에서는 그 밖에 차와 커피를 주문할 수 있으며 인테리어는 밝고 현대적입니다. 월요일 휴무. 오후 2시 30분~오후5시 브레이크 타임',
+VALUES ('더 코코넛 클럽', '11', '21.5', '오전11시 ~ 오후9시30분', '편안한 분위기의 싱가포르 레스토랑으로 코코넛 밀크 요리법으로 조리한 메뉴를 선보입니다. 싱가포르에서 가장 훌륭한 나시르막을 제공하는 식민지 시대풍의 매장입니다. 나시 르막은 코코넛 쌀, 멸치, 땅콩과 함께 제공되는 매콤한 말레이시아 닭고기 요리로, 달걀프라이를 얹어서 먹기도 합니다. 메뉴의 메인 요리는 나시르막이며 가격은 SG$15입니다. 코코넛 클럽에서는 그 밖에 차와 커피를 주문할 수 있으며 인테리어는 밝고 현대적입니다. 월요일 휴무. 오후 2시 30분~오후5시 브레이크 타임',
         '(+65 8725 3315)', 'FoodSpot', NULL, 'SIN');
 
 
@@ -885,7 +885,7 @@ VALUES ('싱가포르 라이온 시티 하이라이트 자전거 투어', 9, 24,
 INSERT INTO paid_activity_db_frame
 (paid_activity_name, open_time, close_time, used_time, business_time, information, cost, homepage, type, image_url, layover_airport_id)
 VALUES
-    ('싱가포르 마리나 베이 샌즈 스카이 파크 전망대', 11, 16, NULL, '매일 11:00 ~ 16:00', '스카이 파크 전망대에서 싱가포르를 감상하는 건 싱가포르 여행의 필수 코스입니다. 싱가포르 시내의 중심부에 위치한 57층 건물에서 싱가포르의 전경을 감상해 보세요.',
+    ('싱가포르 마리나 베이 샌즈 스카이 파크 전망대', 11, 16, 0, '매일 11:00 ~ 16:00', '스카이 파크 전망대에서 싱가포르를 감상하는 건 싱가포르 여행의 필수 코스입니다. 싱가포르 시내의 중심부에 위치한 57층 건물에서 싱가포르의 전경을 감상해 보세요.',
      NULL, 'https://www.myrealtrip.com/offers/126841', 'paid_tour', NULL, 'SIN');
 
 
@@ -900,7 +900,7 @@ VALUES
 INSERT INTO paid_activity_db_frame
 (paid_activity_name, open_time, close_time, used_time, business_time, information, cost, homepage, type, image_url, layover_airport_id)
 VALUES
-    ('유니버셜 스튜디오 싱가포르', 11, 18, NULL, '11:00 ~ 18:00 or 20:00 (공식 홈페이지 확인 필수)',
+    ('유니버셜 스튜디오 싱가포르', 11, 18, 0, '11:00 ~ 18:00 or 20:00 (공식 홈페이지 확인 필수)',
      '유니버셜 스튜디오 싱가포르는 싱가포르 센토사 섬 내에 위치한 동남아시아 최초의 유니버셜 스튜디오 테마파크입니다. 온 가족이 즐길 수 있는 장소로 매력적인 영화의 세계와 함께 다양한 놀이기구와 쇼를 경험할 수 있는 공간입니다.',
      NULL, 'https://www.myrealtrip.com/offers/128279', 'paid_tour', NULL, 'SIN');
 
