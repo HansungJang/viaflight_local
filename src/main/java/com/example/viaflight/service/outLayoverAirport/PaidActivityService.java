@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.nio.DoubleBuffer;
 import java.util.List;
 
 @Service
@@ -23,13 +24,13 @@ public class PaidActivityService {
 	public List<PaidActivityDBFrameDto> load(LayoverAirportRequest layoverAirportRequest) {
 		String layoverAirportId = layoverAirportRequest.getLayoverAirportName().substring(layoverAirportRequest.getLayoverAirportName().length()-4, layoverAirportRequest.getLayoverAirportName().length()-1);
 		double TourArrivalTime = LayoverAirportRequest.layoverArrivalTimeToDouble(layoverAirportRequest.getLayoverArrivalTime()) + MOVE_TIME_AIRPORT_TO_CITY;
-		double ableTourTime = LayoverAirportRequest.layoverArrivalTimeToDouble(layoverAirportRequest.getLayoverTime()) - Total_MOVE_TIME;
+		double ableTourTime = Double.parseDouble(layoverAirportRequest.getLayoverTime()) - Total_MOVE_TIME;
 
-		List<PaidActivityDBFrame> paidActivityDBFrame = paidActivityDBFrameRepository.findByPadiActivity(layoverAirportId, TourArrivalTime, ableTourTime);
+
+		List<PaidActivityDBFrame> paidActivityDBFrame = paidActivityDBFrameRepository.findByPaidActivity(layoverAirportId, TourArrivalTime, ableTourTime);
 		List<PaidActivityDBFrameDto> paidActivityDBFrameDto = paidActivityDBFrame.stream().map(PaidActivityDBFrameDto::from).toList();
 
 		return paidActivityDBFrameDto;
-
 	}
 
 }

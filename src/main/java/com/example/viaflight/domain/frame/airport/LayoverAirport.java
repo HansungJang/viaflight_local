@@ -31,11 +31,6 @@ public class LayoverAirport {
 	@Column(name = "layover_time", nullable = false)
 	private String layoverTime;
 
-
-
-
-	// 밑의 것은 이후에 생각하기.
-
 	@Column(nullable = true, length = 1000)
 	private String wifi;
 
@@ -56,6 +51,10 @@ public class LayoverAirport {
 
 	@Column(nullable = true, length = 1000)
 	private String informationCenter;
+	
+	// todo : 이제 넣어줘야한는 부분 -> sql문도 바꿔줘야함. builder랑 dto도
+	// 편도 시간, 왕복 시간, 위도, 경도
+	
 
 	public LayoverAirport from(LayoverAirportDto layoverAirportDto) {
 		return LayoverAirport.builder()
