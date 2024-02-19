@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -21,7 +22,11 @@ public class LayoverAirportController {
 	private final ResponseService responseService;
 
 	@GetMapping("/layover-airport")
-	public ResponseEntity<LayoverAirportResponse> getLayoverAirportInfo(@RequestBody LayoverAirportRequest layoverAirportRequest) {
+	public ResponseEntity<LayoverAirportResponse> getLayoverAirportInfo
+		(@RequestParam("layoverAirportName") String layoverAirportName, @RequestParam("layoverArrivalTime") String layoverArrivalTime, @RequestParam("layoverTime") String layoverTime) {
+
+		LayoverAirportRequest layoverAirportRequest = new LayoverAirportRequest(layoverAirportName, layoverArrivalTime, layoverTime);
+
 		LayoverAirportResponse response = responseService.load(layoverAirportRequest);
 		return ResponseEntity.ok().body(response);
 	}

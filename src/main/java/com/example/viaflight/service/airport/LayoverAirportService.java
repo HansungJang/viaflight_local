@@ -38,8 +38,6 @@ public class LayoverAirportService {
 
 		LayoverAirportDBFrameDto layoverAirportDBFrameDto = LayoverAirportDBFrameDto.from(layoverAirportDB);
 
-
-
 		return layoverAirportDBFrameDto;
 	}
 
