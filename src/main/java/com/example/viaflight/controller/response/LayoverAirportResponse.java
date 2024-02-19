@@ -8,6 +8,7 @@ import com.example.viaflight.dto.frameAboutDB.inLayoverAirportDto.ShoppingOption
 import com.example.viaflight.dto.frameAboutDB.outLayoverAirport.FoodSpotDBFrameDto;
 import com.example.viaflight.dto.frameAboutDB.outLayoverAirport.FreeTourDBFrameDto;
 import com.example.viaflight.dto.frameAboutDB.outLayoverAirport.PaidActivityDBFrameDto;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,28 +20,28 @@ import java.util.List;
 @Builder
 public class LayoverAirportResponse {
 
-	// field 이름 수정
-	LayoverAirportDBFrameDto layoverAirport;
-	List<AirportEventsDBFrameDto> airportEvents;
-	List<MealOptionsDBFrameDto> foods;
-	List<RestsDBFrameDto> rests;
-	List<ShoppingOptionsDBFrameDto> shopping;
-	List<FoodSpotDBFrameDto> foodSpot;
-	List<FreeTourDBFrameDto> freeTour;
-	List<PaidActivityDBFrameDto> activity;
+	// filter 이름 수정ㅎ
+	LayoverAirportDBFrameDto layoverAirportDBFrameDto;
+	List<AirportEventsDBFrameDto> airportEventsDBFrameDtoList;
+	List<MealOptionsDBFrameDto> mealOptionsDBFrameDtoList;
+	List<RestsDBFrameDto> restsDBFrameDtoList;
+	List<ShoppingOptionsDBFrameDto> shoppingOptionsDBFrameDtoList;
+	List<FoodSpotDBFrameDto> foodSpotDBFrameDtoList;
+	List<FreeTourDBFrameDto> freeTourDBFrameDtoList;
+	List<PaidActivityDBFrameDto> paidActivityDBFrameDtoList;
 
 
 	public LayoverAirportResponse(LayoverAirportDBFrameDto layoverAirportDBFrameDto, List<AirportEventsDBFrameDto> airportEventsDBFrameDtoList, List<MealOptionsDBFrameDto> mealOptionsDBFrameDtoList, List<RestsDBFrameDto> restsDBFrameDtoList, List<ShoppingOptionsDBFrameDto> shoppingOptionsDBFrameDtoList, List<FoodSpotDBFrameDto> foodSpotDBFrameDtoList, List<FreeTourDBFrameDto> freeTourDBFrameDtoList, List<PaidActivityDBFrameDto> paidActivityDBFrameDtoList) {
-		this.layoverAirport = layoverAirportDBFrameDto;
+		this.layoverAirportDBFrameDto = layoverAirportDBFrameDto;
 
-		this.airportEvents = airportEventsDBFrameDtoList;
-		this.foods = mealOptionsDBFrameDtoList;
-		this.rests = restsDBFrameDtoList;
-		this.shopping = shoppingOptionsDBFrameDtoList;
+		this.airportEventsDBFrameDtoList = airportEventsDBFrameDtoList;
+		this.mealOptionsDBFrameDtoList = mealOptionsDBFrameDtoList;
+		this.restsDBFrameDtoList = restsDBFrameDtoList;
+		this.shoppingOptionsDBFrameDtoList = shoppingOptionsDBFrameDtoList;
 
-		this.foodSpot = foodSpotDBFrameDtoList;
-		this.freeTour = freeTourDBFrameDtoList;
-		this.activity = paidActivityDBFrameDtoList;
+		this.foodSpotDBFrameDtoList = foodSpotDBFrameDtoList;
+		this.freeTourDBFrameDtoList = freeTourDBFrameDtoList;
+		this.paidActivityDBFrameDtoList = paidActivityDBFrameDtoList;
 	}
 
 }
