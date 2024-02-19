@@ -1,0 +1,42 @@
+﻿# spring:
+#   datasource:
+#     # mysql: com.mysql.cj.jdbc.Driver
+#     # mariadb: org.mariadb.jdbc.Driver
+#     driver-class-name: com.mysql.cj.jdbc.Driver
+#     # mysql: jdbc:mysql://localhost:3306/testdb
+#     # mariadb: jdbc:mariadb://localhost:3306/testdb
+#     url: jdbc:mysql://localhost:3306/testdb
+#     username: root
+#     password: #비밀번호
+#   jpa:
+#     hibernate:
+#       ddl-auto: create
+#     properties:
+#       hibernate:
+#         format_sql: true
+#     show-sql: true
+#     defer-datasource-initialization: true
+#   sql:
+#     init:
+#       schema-locations: classpath:sql/data.sql
+#       mode: always
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+    properties:
+      hibernate:
+        format_sql: true
+      show_sql: ture
+    defer-datasource-initialization: true
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: root
+    password: 1234
+
+  h2:
+    console:
+      enabled: true
