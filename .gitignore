@@ -33,6 +33,7 @@ out/
 /nbdist/
 /.nb-gradle/
 application.yml
+kakao.properties
 
 ### VS Code ###
 .vscode/
