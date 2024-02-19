@@ -36,7 +36,6 @@
 <ul>
   <li>aws에서 ELB 사용하여, RDS 연결(IntelliJ와 연동)</li>
   <li>이전에 찾은 정보(공항 내부 정보) SQL문 작성 완료</li>
- <br>
 </ul>
 
 <h4>명일 작업</h4>
