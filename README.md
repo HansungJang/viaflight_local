@@ -91,7 +91,9 @@
 
 <h4>수행 작업</h4>
 <ul>
-  
+  <li>멘토진 확인받기</li>
+  <li>kakao map API (국외는 인지 잘 안됨.) -> Google map API로 바꾸기</li>
+  <li>명세서 만들기 (어디에 어떤 정보 있고, data명/type은 무엇이고..)</li>
 </ul>
 
 <h4>명일 작업</h4>
